@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+
+    <style>
+
+        .colorRed { /*Class Selectors*/
+            color: red;
+        }
+
+        .my-bg {
+            background: coral;
+        }
+
+        #blue-text { /*Id selectors we can not reuse this*/
+            color: blue;
+        }
+
+        #my-text {
+            text-decoration: underline;
+        }
+
+        #white-text {
+            color: white;
+        }
+
+        * { /*Universal Selector will select all the elements and add the style to it*/
+            font-style: oblique;
+        }
+
+    </style>
+</head>
+    <body>
+
+        <h1 class="colorRed my-bg" id="white-text">Selections</h1>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus architecto autem beatae consectetur
+            corporis cumque delectus, earum enim expedita libero maxime obcaecati officia repellat repellendus similique,
+            voluptate! Libero, temporibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus architecto autem beatae consectetur
+            corporis cumque delectus, earum enim expedita libero maxime obcaecati officia repellat repellendus similique,
+            voluptate! Libero, temporibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus architecto autem beatae consectetur
+            corporis cumque delectus, earum enim expedita libero maxime obcaecati officia repellat repellendus similique,
+            voluptate! Libero, temporibus.
+        </p>
+
+        <h1 class="my-bg" >Languages</h1>
+            <ol>
+                <li id="blue-text">Java</li>
+                <li class="colorRed">Python</li>
+                <li>C</li>
+            </ol>
+
+        <h1 id="my-text" class="colorRed">Hey</h1>
+
+    </body>
+</html>

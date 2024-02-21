@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+
+    <style>
+
+        h2:hover { /*Pseudo class*/
+            background: yellow;
+        }
+        a:visited { /*if we already visited the page then the link color will be red*/
+          color: red;
+        }
+
+        a:link { /*if the usr is never visited the page  then the link color will be orange*/
+            color: orange;
+        }
+
+        h2:active { /*When clicking, the color will be red*/
+            background: red;
+        }
+
+        input:focus { /*Will focus the input field*/
+            background: burlywood;
+        }
+
+        li:first-child { /*The color will be added to the first list element*/
+            color: orange;
+        }
+
+        li:last-child { /*The color will be added to the last list element*/
+            color: hotpink;
+        }
+
+        li:nth-child(3) { /*The color will be added to the selected element*/
+            color: mediumvioletred;
+        }
+
+        /*This will individually select the elements one by one even if there are not wrapped
+        with a parent*/
+        li:nth-last-child(7) {
+             color: red;
+        }
+
+        li:only-child { /*This will only work if a list element only contains one element*/
+            color: orange;
+        }
+
+        h2::before { /*This will add before the element*/
+            content: "Let's say 😀 ";
+        }
+
+        h2::after { /*This will add after the element*/
+            content: ".......😃";
+        }
+
+        h3::first-letter {
+            color: darkturquoise;
+        }
+
+        p::first-line {
+            color: coral;
+            font-weight: bold;
+        }
+
+        input::placeholder {
+            color: chocolate;
+        }
+
+        input::file-selector-button {
+            background-color: gold;
+        }
+
+        input::file-selector-button:hover {
+            background-color: mediumvioletred;
+        }
+
+        ::marker { /*This will handle the bluet points of all the web page*/
+            content: "😎";
+        }
+
+        ::selection { /*We can change how the selection color works*/
+            background-color: purple;
+            color: white;
+        }
+
+    </style>
+
+</head>
+    <body>
+        <h1>Pseudo Class</h1>
+        <!--<h2>Welcome to IJSE</h2>-->
+
+
+        <a href="http://medium.com/">Medium</a> <br>
+        <a href="http://mototiming.live/">Moto Time Live</a> <br>
+        <a href="https://www.linkedin.com/">LinkedIn</a> <br>
+        <a href="https://docs.google.com/">Docs</a> <br>
+        <a href="https://mail.google.com/mail/u/2/#inbox">Gmail</a> <br><br>
+
+        <form>
+            <label for="name">Name</label> <br>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+        </form>
+
+
+        <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C</li>
+            <li>C#</li>
+            <li>C++</li>
+        </ul>
+
+        <br><br>
+
+        <li>Java</li>
+        <li>Python</li>
+        <li>C</li>
+        <li>C#</li>
+        <li>C++</li>
+
+        <br><br>
+
+        <ul>
+            <li>Java</li>
+        </ul>
+
+<!--===========================================================================================================================================-->
+
+        <h1>Pseudo Elements</h1>
+
+        <h2>Hello CSS</h2>
+
+        <h3>Welcome to CSS</h3>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur incidunt minus mollitia nulla quibusdam
+            quidem quos sequi vel vitae? A aliquid architecto culpa cum dignissimos dolor esse, iure laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur incidunt minus mollitia nulla quibusdam
+            quidem quos sequi vel vitae? A aliquid architecto culpa cum dignissimos dolor esse, iure laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur incidunt minus mollitia nulla quibusdam
+            quidem quos sequi vel vitae? A aliquid architecto culpa cum dignissimos dolor esse, iure laborum!
+        </p>
+
+        <form >
+            <input type="text" placeholder="Enter Your ID">
+
+            <br><br>
+
+            <input type="file">
+        </form>
+
+        <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C</li>
+            <li>C#</li>
+            <li>C++</li>
+        </ul>
+
+
+    </body>
+</html>

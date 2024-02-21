@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+
+  <style>
+
+    /*[href] { Add style to all href(we can define any value)
+      background: palevioletred;
+    }
+
+    [href = 'https://mototiming.live/'] { Add style to defined value
+      background: greenyellow;
+    }*/
+
+    /*[href ^= "https"] { Adds style to if it starts with https
+      background: yellow;
+    }*/
+
+    /*[href $= ".com/"] { Adds styles to if it ends with .com/
+      background: yellowgreen;
+    }*/
+
+    /*[href *= "m"] { !*Adds style if the value contains letter 'm'*!
+      background: burlywood;
+    }*/
+
+    /*[href ~= "m"] { !*Adds style if the value contains 'm' word*!
+      background: burlywood;
+    }*/
+
+    /*h1[href = "http://medium.com/"] { !*Adds style if the value matches to h1 tag*!
+      background: burlywood;
+    }*/
+
+    /*#medium[href] { !*Adds style if the value matches to the id and href*!
+      background: burlywood;
+    }*/
+
+    .myMedium {
+      background: darkturquoise;
+    }
+
+  </style>
+
+</head>
+  <body>
+
+    <h1>Attributes</h1>
+      <ol>
+        <li>
+          <a href="http://mototiming.live/">Moto Timing Live</a>
+        </li>
+
+        <li>
+          <a href="https://www.1337x.tw/">1337</a>
+        </li>
+
+        <li>
+          <a href="http://medium.com/">Medium</a>
+        </li>
+
+        <li>
+          <a href="http://mediu m .com/">Medium two</a>
+        </li>
+      </ol>
+
+    <h1 href="http://medium.com/">Hey Welcome</h1>
+
+    <h1 id = "medium" href="http://medium.com/">Hey Welcome</h1>
+
+    <h1 class="myMedium" href="http://medium.com/">Hey Welcome to Medium</h1>
+
+    <h1 class="myMedium" href="http://medium.com/">Hey Welcome to Medium</h1>
+
+    <h1 class="myMedium">Hey Welcome to Medium</h1>
+
+  </body>
+</html>
