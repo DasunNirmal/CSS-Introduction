@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cascade</title>
+
+    <style>
+        .custom-btn { /*(0,0,1,0)*/
+            color: hotpink;
+        }
+
+        #red { /*(0,1,0,0)*/
+            color: red;
+        }
+
+        button { /*(0,0,0,1)*/
+            color: darkturquoise;
+        }
+
+        * { /*(0,0,0,0)*/
+            color: darkblue;
+        }
+    </style>
+
+</head>
+<body>
+        <!--style selector have the highest value (1,0,0,0)-->
+    <button id="red" class="custom-btn" style="color: chocolate">Click</button>
+
+</body>
+</html>
