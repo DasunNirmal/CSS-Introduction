@@ -19,50 +19,33 @@
             height: 500px;
 
             border: 3px solid red;
+            position: relative;
         }
 
         #my_div1 {
             width: 100px;
             aspect-ratio: 1/1;
             background-color: mediumslateblue;
-            position: relative; /*we use relative when we need to fix the position from it's original state to new position*/
+            /*position: relative; !*we use relative when we need to fix the position from it's original state to new position*!
             top: 20px;
-            left: 200px;
+            left: 200px;*/
+
+            position: absolute; /*we use absolute when we need to fix the position from it's relative parent state to new position
+                                    and the parent must be relative other wise the positioning will not work properly*/
+            right: 450px;
+            top: 200px;
+
         }
-        #my_div2 {
-            width: 100px;
-            aspect-ratio: 1/1;
-            background-color: coral;
-            position: relative;
-            top: 40px;
-            left: 300px;
-        }
-        #my_div3 {
-            width: 100px;
-            aspect-ratio: 1/1;
-            background-color: hotpink;
-            position: relative;
-            top: 60px;
-            left: 400px;
-        }
-        #my_div4 {
-            width: 100px;
-            aspect-ratio: 1/1;
-            background-color: gray;
-            position: relative;
-            top: 80px;
-            left: 500px;
-        }
+
     </style>
 
 </head>
     <body>
 
         <section>
+
             <div id="my_div1"></div>
-            <div id="my_div2"></div>
-            <div id="my_div3"></div>
-            <div id="my_div4"></div>
+
         </section>
 
     </body>
