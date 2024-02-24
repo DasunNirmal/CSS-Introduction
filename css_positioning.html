@@ -5,6 +5,15 @@
     <title>CSS Positioning</title>
 
     <style>
+        /*There are five positioning elements that we can use
+
+            position
+            top
+            bottom
+            right
+            left*/
+
+
         section {
             width: 1000px;
             height: 500px;
@@ -12,20 +21,49 @@
             border: 3px solid red;
         }
 
-        #my_div {
+        #my_div1 {
             width: 100px;
             aspect-ratio: 1/1;
             background-color: mediumslateblue;
+            position: relative; /*we use relative when we need to fix the position from it's original state to new position*/
+            top: 20px;
+            left: 200px;
+        }
+        #my_div2 {
+            width: 100px;
+            aspect-ratio: 1/1;
+            background-color: coral;
             position: relative;
+            top: 40px;
+            left: 300px;
+        }
+        #my_div3 {
+            width: 100px;
+            aspect-ratio: 1/1;
+            background-color: hotpink;
+            position: relative;
+            top: 60px;
+            left: 400px;
+        }
+        #my_div4 {
+            width: 100px;
+            aspect-ratio: 1/1;
+            background-color: gray;
+            position: relative;
+            top: 80px;
+            left: 500px;
         }
     </style>
 
 </head>
-<body>
+    <body>
 
-    <section>
-        <div id="my_div"></div>
-    </section>
+        <section>
+            <div id="my_div1"></div>
+            <div id="my_div2"></div>
+            <div id="my_div3"></div>
+            <div id="my_div4"></div>
+        </section>
 
     </body>
 </html>
