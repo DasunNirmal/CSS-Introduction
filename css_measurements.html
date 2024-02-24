@@ -38,12 +38,17 @@
             height: 100vh;
         }*/
 
-        p { /*equal measurement will always work with the parent*/
-            font-size: 2em;
+        p {
+            /*font-size: 1em;*/  /*equal measurement will always work with the parent*/
+            font-size: 1rem;  /*root element will not care about the nearest parent, and the root element value will be the value of html root value*/
         }
 
         section {
-            font-size: 200px;
+            font-size: 100px;
+        }
+
+        main {
+            font-size: 50px;
         }
 
     </style>
@@ -57,10 +62,16 @@
 
         <!--<div id="div3"></div>-->
 
-        <section>
+<!--        <section>
             <p>
                 Hello
             </p>
+        </section>-->
+
+        <section>
+            <main>
+            <p>Hello</p>
+            </main>
         </section>
 
     </body>
