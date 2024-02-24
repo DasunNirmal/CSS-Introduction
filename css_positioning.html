@@ -22,36 +22,79 @@
             position: relative;
         }
 
-        #my_div1 {
-            width: 100px;
-            aspect-ratio: 1/1;
+/*        #my_div1 {
+            width: 500px;
+            !*aspect-ratio: 1/1;*!
+            height: 250px;
             background-color: mediumslateblue;
-            /*position: relative; !*we use relative when we need to fix the position from it's original state to new position*!
+            !*position: relative; !*we use relative when we need to fix the position from it's original state to new position*!
             top: 20px;
-            left: 200px;*/
+            left: 200px;*!
 
-            position: absolute; /*we use absolute when we need to fix the position from it's relative parent state to new position
-                                    and the parent must be relative other wise the positioning will not work properly*/
-            right: 450px;
-            top: 200px;
-
-            /*right: 0;
-            left: 0;
-            bottom: 0;
+            position: absolute; !*we use absolute when we need to fix the position from it's relative parent state to new position
+                                    and the parent must be relative other wise the positioning will not work properly*!
+            !*right: 450px;
+            top: 200px;*!
             top: 0;
-            margin: auto*/;
 
+
+        }*/
+
+        /*#my_div2 {
+            width: 500px;
+            height: 250px;
+            background-color: hotpink;
+            position: absolute;
+
+            right: 0;
         }
 
+        #my_div3 {
+            width: 500px;
+            height: 250px;
+            background-color: yellow;
+            position: absolute;
+
+            bottom: 0;
+        }
+
+        #my_div4 {
+            width: 500px;
+            height: 250px;
+            background-color: orange;
+            position: absolute;
+
+            left: 0;
+        }*/
+
+        main {
+            width: 800px;
+            height: 300px;
+            border:8px solid gold ;
+
+            /*position: relative;*/
+        }
+        div {
+            width: 100px;
+            aspect-ratio: 1/1;
+            background-color: hotpink;
+            position: absolute;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
     </style>
 
 </head>
     <body>
 
         <section>
-
-            <div id="my_div1"></div>
-
+            <main>
+                <div></div>
+            </main>
         </section>
 
     </body>
