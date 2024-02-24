@@ -38,17 +38,29 @@
             height: 100vh;
         }*/
 
-        p {
-            /*font-size: 1em;*/  /*equal measurement will always work with the parent*/
-            font-size: 1rem;  /*root element will not care about the nearest parent, and the root element value will be the value of html root value*/
-        }
+        /*p {
+            !*font-size: 1em;*!  !*equal measurement will always work with the parent*!
+            font-size: 3rem;  !*root element will not care about the nearest parent, and the root element value will be the value of html root value*!
+        }*/
 
-        section {
+        /*section {
             font-size: 100px;
         }
 
         main {
             font-size: 50px;
+        }*/
+
+        #div4 {
+            width: 400px;
+            height: 400px;
+            border: 2px solid firebrick;
+        }
+
+        #div4>div {
+            width: 50%;
+            height: 50%;
+            background-color: purple;
         }
 
     </style>
@@ -68,11 +80,15 @@
             </p>
         </section>-->
 
-        <section>
+        <!--<section>
             <main>
             <p>Hello</p>
             </main>
-        </section>
+        </section>-->
+
+        <div id="div4">
+            <div></div>
+        </div>
 
     </body>
 </html>
