@@ -18,14 +18,33 @@
         }
 
         * { /*(0,0,0,0)*/
-            color: darkblue;
+            color: burlywood;
         }
+
+        /*===============================================================================================================*/
+
+        .h1 { /*(0,0,1,0)*/
+            color: burlywood;
+        }
+
+        .h1[name] { /*(0,0,2,0)*/
+            color: mediumslateblue;
+        }
+
+        [name] { /*(0,0,1,0)*/
+            color: purple;
+        }
+
     </style>
 
 </head>
-<body>
+    <body>
         <!--style selector have the highest value (1,0,0,0)-->
-    <button id="red" class="custom-btn" style="color: chocolate">Click</button>
+        <button id="red" class="custom-btn" style="color: chocolate">Click</button>
 
-</body>
+        <h1 class="h1" name = "h1">Hello</h1>
+        <h1 class="h1">Welcome</h1>
+        <h1 name = "h1">Hey</h1>
+
+    </body>
 </html>
