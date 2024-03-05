@@ -2,9 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <title>Grid LayOut</title>
+    <link rel="stylesheet" href="assetes/style.css">
 
-</body>
+    <style>
+
+        section {
+            width: 1000px;
+            height: 500px;
+            background-color: coral;
+            display: grid;
+            /*grid-template-columns: 1fr 1fr 1fr;*/ /*Fractions*/
+            /*grid-template-rows: 1fr 1fr;*/
+            /*grid-template-columns: repeat(4,1fr);*/
+        }
+
+        section>div {
+            border: 1px solid deeppink;
+            background-color: orange;
+        }
+
+    </style>
+
+</head>
+    <body>
+
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </section>
+
+    </body>
 </html>
