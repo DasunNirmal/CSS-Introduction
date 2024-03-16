@@ -10,14 +10,17 @@
         section {
             display: flex;
             justify-content: space-around;
+            margin-top: 25px;
         }
         section>div {
             width: 200px;
             aspect-ratio: 1/1;
             align-self: center;
             text-align: center;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
             padding: 20px 15px;
+            cursor: pointer;
+            transition-duration: 1s;
         }
         main {
             /*max-width: 1000px;*/
@@ -44,6 +47,13 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
+        #grid>div:hover {
+            width: 120px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+
+        section>div:hover {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 
         @media all and (max-width: 700px) {
             section {
@@ -59,11 +69,12 @@
                 grid-template-columns: repeat(3,1fr);
             }
         }
+
         @media all and (max-width: 500px){
             #grid {
                 grid-template-columns: repeat(2,1fr);
             }
-        }
+        }}
 
     </style>
 
